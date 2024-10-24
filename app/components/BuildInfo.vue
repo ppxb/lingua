@@ -11,7 +11,7 @@ const timeAgo = formatTimeAgo(new Date(data.buildTime))
   <div>
     Lingua
     <span mx1 font-mono>v{{ version }}</span>
-    (<a font-mono :href="`https://github.com/maru-re/maru/commit/${data.sha}`" target="_blank">{{ data.sha.slice(0, 7) }}</a>)
+    (<a font-mono :href="`https://github.com/ppxb/lingua/commit/${data.sha}`" target="_blank">{{ data.sha.slice(0, 7) }}</a>)
     <br>
     <span op75>built at</span> {{ timeAgo }}
   </div>
