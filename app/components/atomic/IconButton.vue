@@ -1,0 +1,30 @@
+<script setup lang="ts">
+import { NuxtLink } from '#components'
+
+defineProps<{
+  icon: string
+  title?: string
+  to?: string
+}>()
+</script>
+
+<template>
+  <component
+    :is="to ? NuxtLink : 'button'"
+    v-tooltip="title"
+    :to="to"
+    :title="title"
+    aspect-ratio-1 flex-none rounded-full p1
+    class="icon-button"
+  >
+    <slot>
+      <span :class="icon" block />
+    </slot>
+  </component>
+</template>
+
+<style>
+.icon-button {
+  --uno: '@hover:bg-primary:15 @hover:color-primary dark:@hover:bg-primary:30';
+}
+</style>

@@ -1,5 +1,24 @@
 {
   "common": {
     "backToHome": "Back to Home"
-  }
+  },
+  "messages": {
+    "wip": "The website is under development, and many features are not yet complete."
+  },
+  "intro": {
+    "title": "Practice English In An Ease Way",
+    "description": "English Practice Assistant Tool Based on Nuxt3"
+  },
+  "displayMode": {
+    "toggleMode": "Toggle to {mode} mode",
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "footer": {
+    "about": "About Us",
+    "contact": {
+      "github": "GitHub"
+    }
+  },
+  "appname": "Lingua"
 }

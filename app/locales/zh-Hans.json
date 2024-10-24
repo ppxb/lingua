@@ -1,5 +1,24 @@
 {
   "common": {
     "backToHome": "回到首页"
-  }
+  },
+  "messages": {
+    "wip": "网站开发中、许多功能尚未完善。"
+  },
+  "intro": {
+    "title": "更简单的方式练习英语",
+    "description": "基于 Nuxt3 的英语练习辅助工具"
+  },
+  "displayMode": {
+    "toggleMode": "切换为{mode}模式",
+    "light": "明亮",
+    "dark": "暗黑"
+  },
+  "footer": {
+    "about": "关于我们",
+    "contact": {
+      "github": "GitHub"
+    }
+  },
+  "appname": "Lingua"
 }

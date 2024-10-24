@@ -13,8 +13,12 @@ export default defineConfig({
   shortcuts: [
     {
       'bg-base': 'bg-white dark:bg-black',
+      'color-base': 'text-#222 dark:text-#ddd',
       'border-base': 'border-gray:20',
+      'floating-glass': 'shadow-lg backdrop-blur-3 bg-base bg-op-70 z-floating border border-base rounded-full',
+
       'z-dialog': 'z-500',
+      'z-floating': 'z-100',
     },
     [/^btn-simple-(.*)$/, ([,color]) => {
       return [
@@ -46,7 +50,7 @@ export default defineConfig({
       },
       fonts: {
         sans: 'DM Sans',
-        mono: 'Space Mono',
+        mono: 'DM Mono',
       },
     }),
   ],

@@ -1,11 +1,10 @@
 <template>
   <div p4>
+    <FloatingActions />
     <div flex="~ col gap-2 items-center" pb-10 pt-25 lt-md="pt-10 pb-5">
-      <div i-mdi-circle-double text-5xl op75 />
-      <div font-jp-serif text-4xl>
-        <ruby>
-          <rt>にじゅうまる</rt>
-        </ruby>
+      <div i-carbon:boolean text-5xl op75 />
+      <div text-4xl font-mono>
+        {{ $t("appname") }}
       </div>
       <div mt5 text-center op75>
         {{ $t("intro.title") }}
@@ -45,17 +44,9 @@
       {{ $t("messages.wip") }}
     </div>
     <div flex="~ justify-center wrap">
-      <NuxtLink to="/format" op50 class="@hover:(color-primary underline op100)">
-        {{ $t("footer.fileFormat") }}
-      </NuxtLink>
-      <span mx2 op50> · </span>
       <NuxtLink to="/about" op50 class="@hover:(color-primary underline op100)">
         {{ $t("footer.about") }}
       </NuxtLink>
-      <span mx2 op50> · </span>
-      <a href="https://chat.maru.re" target="_blank" op50 class="@hover:(color-primary underline op100)">
-        {{ $t("footer.contact.discord") }}
-      </a>
       <span mx2 op50> · </span>
       <a href="https://github.com/maru-re/maru" target="_blank" op50 class="@hover:(color-primary underline op100)">
         {{ $t("footer.contact.github") }}

@@ -29,9 +29,9 @@ const positionClass = computed(() => {
     case 'top':
       return 'top-0 left-0 right-0 border-b'
     case 'left':
-      return 'bottom-0 top-0 right-0 border-r w-max'
+      return 'bottom-0 top-0 left-0 border-r w-max'
     case 'right':
-      return 'bottom-0 left-0 top-0 border-l w-max'
+      return 'bottom-0 right-0 top-0 border-l w-max'
     default:
       return ''
   }
@@ -97,7 +97,7 @@ watch(
   <div
     v-if="!useVIf || enable"
     fixed z-dialog
-    class="transition-opacity duration-100 ease-out"
+    class="transition-opacity duration-300 ease-out"
     :class="[containerPositionClass,
              show ? '' : 'pointer-events-none',
              show ? 'opacity-100' : 'opacity-0',
@@ -105,12 +105,12 @@ watch(
   >
     <div
       v-if="mask"
-      class="absolute bottom-0 left-0 right-0 top-0 transition-opacity duration-500 ease-out bg-base"
-      :class="show ? 'opacity-50' : 'opacity-0'"
+      class="absolute bottom-0 left-0 right-0 top-0 transition-all duration-300 ease-out bg-base"
+      :class=" show ? 'opacity-50' : 'opacity-0'"
       @click="onClickEmptySpace()"
     />
     <div
-      class="absolute max-h-screen max-w-screen overflow-auto border-base transition-all duration-200 ease-out bg-base"
+      class="absolute max-h-screen max-w-screen overflow-auto border-base transition-all duration-300 ease-out bg-base"
       :class="[positionClass, dialogClass]"
       :style="show ? {} : { transform }"
     >
